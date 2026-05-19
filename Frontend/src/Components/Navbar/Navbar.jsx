@@ -3,6 +3,7 @@ import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link, useNavigate } from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext'
+
 const Navbar = ({ setshowLogin }) => {
   const [menu, setmenu] = useState("Home")
   const { getTotalCartAmount, token, setToken,setCartItems } = useContext(StoreContext)
