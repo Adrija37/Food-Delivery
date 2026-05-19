@@ -1,0 +1,76 @@
+
+.header{
+    height: 500px;
+    max-height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 550px;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+
+.header-contents p{
+    color: white;
+    font-size: 16px;
+line-height: 1.5;
+}
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+}
+@media (max-width:750px){
+
+    .header{
+        height: 38vw;
+    }
+
+    .header-contents{
+        max-width: 65%;
+    }
+
+    .header-contents p{
+        display: none;
+    }
+
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .explore-menu-list{
+        gap: 15px;
+    }
+
+    .food-display-list{
+        grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+        gap: 20px;
+    }
+}
